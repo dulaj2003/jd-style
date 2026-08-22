@@ -1,0 +1,328 @@
+.footer {
+    /* height: 380px; */
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    padding-top: 80px;
+    position: relative;
+}
+
+.footer-content{
+    background: linear-gradient(to bottom, #000000, #00172D); 
+    height: calc(100% - 35px);
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px 0 0;
+}
+
+
+.information-div, .support-div, .work-time-div{
+    /* margin: 0 20px 0; */
+    text-align: left;
+}
+
+.information-div h3, .support-div h3, .work-time-div h3, .newsletter h3{
+    padding: 20px 0 10px 10px;
+    text-transform: uppercase;
+}
+
+
+.information-div a, .support-div a, .work-time-div p, .newsletter p, .os-icons a {
+    color: #e8eaed;
+    text-decoration: none;
+    margin: 0 10px;
+    line-height: 1.8;
+    position: relative;
+}
+
+
+.information-div a::after, .support-div a::after, .os-icons a::after { 
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: -4px; /* Adjust underline vertical position */ 
+    width: 100%; 
+    height: 2px; /* Adjust underline thickness */ 
+    background: rgb(255, 0, 0); 
+    transform: scaleX(0); 
+    transform-origin: bottom right; 
+    transition: transform 0.3s ease; 
+}
+
+.information-div a:hover::after, .support-div a:hover::after, .os-icons a:hover::after { 
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+}
+.newsletter{
+    margin-right: 30px;
+    /* width: 450px; */
+}
+
+.icons {
+    margin-top: 120px;   
+    /* position: absolute;  */
+}
+
+.fb {
+    color: rgb(202, 202, 240);
+}
+
+.support-center h3 {
+    padding-bottom: 20px;
+}
+
+.support-center p {
+    padding: 0 0 0 10px;
+    line-height: 0.5;
+}
+
+.support-center section{
+    margin: -10px 0 0 10px;
+}
+
+
+
+
+.name{
+    width: 410px;
+    height: 35px;
+    margin: 10px 5px 0 10px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.email{
+    width: 410px;
+    height: 35px;
+    margin: 10px 5px 0 10px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+
+.register {
+    width: 425px;
+    height: 40px;
+    margin: 10px 5px 0 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.register:hover{
+    background-color: rgb(0, 218, 218);
+}
+
+.os-icons {
+    padding-bottom: 10px;
+    margin: 10px 0;
+}
+
+.copy-right-mark {
+    height: 35px;
+    background-color:  rgb(0, 0, 0);
+    align-content: center ;
+    text-align: center;
+}
+
+.custom-link {
+    color: #ede8e8;
+    position: relative;
+    text-decoration: none; /* remove underline from the link */
+}
+
+.custom-link::after { 
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: -4px; /* Adjust underline vertical position */ 
+    width: 100%; 
+    height: 2px; /* Adjust underline thickness */ 
+    background: rgb(255, 0, 0); 
+    transform: scaleX(0); 
+    transform-origin: bottom right; 
+    transition: transform 0.3s ease; 
+}
+
+.custom-link:hover::after { 
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+}
+
+.copy-right-mark span{
+    color: aqua;
+}
+.copy-right-mark p {
+    padding: 0 25px;
+}
+
+
+
+/* ---------------------------------------------------------for responsive----------------------------------------------------------------- */
+
+/* @media(max-width:1085px){
+    .footer{
+        bottom: 0px;
+    }
+
+    .footer-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .information-div,
+    .support-div,
+    .work-time-div,
+    .newsletter {
+        flex: 1 1 100%; 
+        text-align: center; 
+    }
+
+
+    .newsletter input,
+    .newsletter button {
+        width: 90%; 
+        margin: 10px auto;
+    }
+
+    .os-icons {
+        text-align: center; 
+    }
+
+    .copy-right-mark {
+        font-size: 12px; 
+        padding: 15px;
+    }
+} */
+
+.footer-responsive {
+    display: flex ;
+    flex: 1;
+    
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: 30px;
+}
+@media (min-width:1350px){
+    .footer-responsive {
+        display: flex ;
+        flex: 1;
+        justify-content: space-evenly;
+        margin-left: 0;
+    }
+}
+/* @media (max-width:1350px){
+    .icons{
+        overflow: hidden;
+        display: none;
+    }
+} */
+@media (max-width:1350px){
+    .footer-responsive {
+        justify-content: space-evenly;
+        margin: 0 30px 0 30px;
+
+    }
+    .icons {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto; 
+        margin-top: 200px;
+        width: 360px;
+        height: 50px; 
+        margin-bottom: 20px;
+    }
+    .newsletter {
+        margin: 120px auto 0;
+        justify-items: center;
+    }
+
+    .footer-content {
+        display: block;
+    }
+    .os-icons {
+        margin: 0;
+        padding: 30px 0;
+        justify-items: center;
+    }
+    
+}
+
+@media (max-width: 835px) {
+    .footer-responsive {
+        display: block;
+        justify-items: center;
+        justify-content: center;
+    }
+    .support-center{
+        padding: 30px 0 0;
+    }
+    .support-div {
+        margin: 30px 0 0;
+    }
+    
+    .work-time-div {
+        justify-items: center;
+        padding: 30px 0 0;
+    }
+    .footer-content {
+        justify-content: center;
+        justify-items: center;
+    }
+    .icons {
+        margin-top: 40px;
+    }
+    .information-div, .support-div {
+        text-align: center;
+    }
+}
+
+@media (max-width: 746px) {
+    .copy-right-mark {
+        height:70px ;
+        line-height: 1.5;
+        padding: 0 20px;
+    } 
+}
+
+@media (max-width: 444px) {
+    .name, .email{
+        width: 350px;
+    }
+    .register {
+        width: 365px;
+    }
+    .newsletter p {
+        text-align: center; 
+       
+    }
+}
+
+
+
+@media (max-width: 382px) {
+    .name, .email{
+        width: 320px;
+    }
+    .register {
+        width: 335px;
+    }
+    .icons {
+        width: 320px;
+    }
+    .icons img, .icons svg {
+        width: 40px; 
+        height: 40px; 
+        margin: 1px; /* spacing between icons */
+    }
+
+    .icons img {
+        object-fit: contain;
+    }
+
+}

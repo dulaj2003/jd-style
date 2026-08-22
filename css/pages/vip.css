@@ -1,0 +1,271 @@
+/*-------------------------------------------------- General styling --------------------------------------------------*/
+header {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+}
+
+
+
+
+.vip-container {
+    display: flex;
+    
+}
+
+
+
+/*--------------------------------------------------- <div class="v1"> styling ---------------------------------------------------*/
+.v1 {
+    /* flex: 1; */
+    width: 65%;
+    background-image: url('/assets/images/vipbanner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+
+
+/*--------------------------------------------------- <div class="registor-container"> styling ---------------------------------------------------*/
+.registor-container {
+    flex: 1;
+    /* width: 40%; */
+    /* flex-wrap: 1; */
+    font-size: 1.25rem;
+    padding: 0 25px;
+    background-color: #f0d7834f;
+}
+
+.registor-heading h1 {
+    font-size: 2.375rem;
+    margin: 10px 0 0;
+    line-height: 0.9;
+    
+}
+
+.registor-container span {
+    font-size: 3.75rem;
+    color: red;
+}
+
+.name-div label {
+    margin-right: 10px; 
+}
+.name-div {
+    /* display: flex;  */
+    flex-direction: column; 
+    margin: 25px 0 20px;
+    text-align: left;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.name-input-row input { 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding doesn't affect total width */
+    min-width: 150px; 
+}
+.name-input-row {
+    display: flex; 
+    justify-content: space-between; 
+}
+.name-div input,
+.address-div select,
+.gender-div select {
+    
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 48%;
+    background-color: #ffedb0;
+}
+.address-gender {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+}
+
+.address-div,
+.gender-div {
+    min-width: 48%; /* Prevent collapsing on smaller screens */
+}
+
+.address-div select,
+.gender-div select {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.email-div,
+.number-div,
+.dob-div,
+.address-gender,
+.password-div1,
+.password-div2 {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.email-div input,
+.number-div input,
+.dob-div input,
+.password-div1 input,
+.password-div2 input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #ffedb0;
+}
+
+.checkbox-div {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    color: #303030;
+    margin: 15px 0;
+}
+
+.checkbox-div input {
+    margin-right: 10px;
+}
+
+.checkbox-div a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/*---------- Buttons Styling ----------*/
+.buttons-div {
+    display: flex;
+    width: 100%;
+    padding: 10px 0 40px;
+    justify-content: space-between;
+}
+
+.clear,
+.send {
+    width: 48%;
+    padding: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.clear:hover {
+    background-color: #555;
+}
+
+.send {
+    background-color: #f92a2af8;
+    color: #ffffff;
+}
+
+.send:hover {
+    background-color: #ff4949;
+}
+
+
+@media (max-width: 1190px) {
+    .vip-container {
+        display:inline-grid;
+        width: 100%;
+
+    }
+    .v1 {
+        height: 600px;
+        width: 100%;
+    }
+    .registor-heading {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+    .form-border {
+        padding: 0 15%;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .form-border {
+        padding: 0 10%;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .form-border {
+        padding: 0 5%;
+    }
+    .address-gender {
+        gap: 15px;
+    }
+    .registor-heading h1 {
+        font-size: 2.125rem;
+    }
+    .registor-container span {
+        font-size: 3.25rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .registor-heading h1 {
+        font-size: 2rem;
+    }
+    .registor-container span {
+        font-size: 3.125rem;
+    }
+    .buttons-div {
+        padding: 10px 0 40px;
+        justify-content: space-between;
+    }
+    .name-input-row input,
+    .address-div select,
+    .gender-div select {
+    padding: 8px;
+    font-size: 0.9rem;
+    }
+    .email-div input,
+    .number-div input,
+    .dob-div input,
+    .password-div1 input,
+    .password-div2 input {
+    padding: 8px 0;
+    font-size: 0.9rem;
+    }
+
+    .checkbox-div {
+    font-size: 1rem;
+    }
+    .clear,
+    .send {
+        width: 48%;
+        padding: 8px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+}

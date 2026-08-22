@@ -1,0 +1,219 @@
+/*------------------------------------------------- General styling ---------------------------------------*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+/*--------------------------------------------------- Form Container ---------------------------------------------------*/
+.form-container {
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0 30px;
+    font-size: 18px; 
+    background-image: url('/assets/images/services-bg-img2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.form-content {
+    margin-top: 40px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.form-container h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.f {
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 350px;
+    padding: 10px 30px 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.name-div, .order-id-div, .email-div, .message-div {
+    padding-top: 15px;
+    text-align: left;
+}
+
+.name-div input, .order-id-div input, .email-div input, #msg {
+    padding: 6px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 335px;
+    background-color: #c2c2c22d;
+}
+
+/*------------------------- Buttons Styling -------------------------*/
+.buttons-div {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.clear, .send {
+    width: 50%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+.clear {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.clear:hover {
+    background-color: #555;
+}
+
+.send {
+    background-color: #5a2af9;
+    color: #ffffff;
+}
+
+.send:hover {
+    background-color: #7949ff;
+}
+
+
+
+
+/*--------------------------------------------------- Shipping Policy / Returns & Refund Policy ---------------------------------------------------*/
+.policy-discription {
+    font-size: 18px;
+    line-height: 1.3;
+    padding: 10px 180px;
+    text-align: justify;
+    
+}
+
+.policy-discription h2{
+    font-size: 40px;
+    padding: 30px 0 15px 0;
+    text-align: center;
+
+}
+
+.policy-discription h3{
+    font-size: 25px;
+    padding: 20px 0 10px;
+}
+
+.policy-discription ul {
+    padding-left: 50px;
+    padding-bottom: 15px;
+}
+
+#text1 {
+    display: block;
+    margin: 15px 0;
+}
+
+.text2 {
+    color: red;
+    font-size: 17px;
+}
+
+.customer-service {
+    color: #000000;
+    position: relative;
+    text-decoration: none; /* remove link underline */
+}
+
+.customer-service::after { 
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: -4px; 
+    width: 100%; 
+    height: 3px; 
+    background: rgb(0, 4, 255); 
+    transform: scaleX(0); 
+    transform-origin: bottom right; 
+    transition: transform 0.3s ease; 
+}
+
+.customer-service:hover::after { 
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+}
+
+.policy-discription p1 {
+    display: block;
+    padding-bottom: 40px;
+}
+
+.policy1, .policy2 {
+    background-color: rgba(255, 228, 196, 0.61);
+    padding: 0 40px;
+    margin-top: 40px ;    
+    border: 1px solid burlywood;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+
+@media (max-width: 992px) {
+    .policy-discription {
+        padding: 10px 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container h1  {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 676px) {
+    .policy-discription {
+        padding: 10px 80px;
+    }
+}
+@media (max-width: 590px) {
+    .policy1, .policy2 {
+        padding: 0 30px;
+    }
+    .form-container h1  {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 530px) {
+    .policy-discription h2 {
+        font-size: 35px;
+    }
+    .policy-discription {
+        padding: 10px 50px;
+    }
+    .form-container h1  {
+        font-size: 40px;
+        margin: 0;
+    }
+}
+@media (max-width: 435px) {
+    .f {
+        width: 300px;
+    }
+    .name-div input, .order-id-div input, .email-div input, #msg {
+        width: 285px;
+    }
+    .form-content {
+        margin-top: 30px;
+    }
+}

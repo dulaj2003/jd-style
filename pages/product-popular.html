@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Products</title>
+    <link rel="stylesheet" href="/css/shared/page-header.css">
+    <link rel="stylesheet" href="/css/pages/product-popular.css">
+    <link rel="stylesheet" href="/css/shared/page-footer.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="infinity">
+            <ul>
+                <li>Up to 15% off Every Friday</li>
+                <li>Rs.5000 gift-card on every birthday for registered users</li>
+                <li>Free shipping on orders above Rs.25,000</li>
+                <li>Up to 15% off Every Friday</li>
+                <li>Rs.5000 gift-card on every birthday for registered users</li>
+                <li>Free shipping on orders above Rs.25,000</li>
+            </ul>
+            <ul>
+                <li>Up to 15% off Every Friday</li>
+                <li>Rs.5000 gift-card on every birthday for registered users</li>
+                <li>Free shipping on orders above Rs.25,000</li>
+                <li>Up to 15% off Every Friday</li>
+                <li>Rs.5000 gift-card on every birthday for registered users</li>
+                <li>Free shipping on orders above Rs.25,000</li>
+            </ul>
+        </div>
+
+        <div class="top-bar">
+            <div class="top-bar-left"></div>
+            <div class="top-bar-home-button">
+                <a href="/pages/home.html" class="home-button"><strong>JD STYLE</strong></a>
+            </div>
+
+            <div class="country-dropdown">
+                <button class="country-dropdown-btn">
+                    <img id="country-selected-flag" src="/assets/images/country-flags/Sri_Lanka.png" alt="Flag" />
+                    <span id="country-selected-country">Sri Lanka Rs</span>
+                </button>
+                <ul class="country-dropdown-content">
+                    <li class="country-dropdown-item" data-country="Afghanistan ؋">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Afghanistan.png"
+                            alt="Flag 1" /> Afghanistan (AFN ؋)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Algeria د.ج">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Algeria.png" alt="Flag 2" />
+                        Algeria (DZD د.ج)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Argentina $">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Argentina.png" alt="Flag 3" />
+                        Argentina (ARS $)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Australia $">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Australia.png" alt="Flag 4" />
+                        Australia (AUD $)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Austria €">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Austria.png" alt="Flag 5" />
+                        Austria (EUR €)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Bangladesh ৳">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Bangladesh.png" alt="Flag 6" />
+                        Bangladesh (BDT ৳)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Belgium €">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Belgium.png" alt="Flag 7" />
+                        Belgium (EUR €)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Brazil R$">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Brazil.png" alt="Flag 8" />
+                        Brazil (BRL R$)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Bulgaria лв">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Bulgaria.png" alt="Flag 9" />
+                        Bulgaria (BGN лв)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Canada $">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Canada.png" alt="Flag 10" />
+                        Canada (CAD $)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Chile $">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Chile.png" alt="Flag 11" />
+                        Chile (CLP $)
+                    </li>
+                    <li class="country-dropdown-item" data-country="China ¥">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/China.png" alt="Flag 12" />
+                        China (CNY ¥)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Colombia $">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Colombia.png" alt="Flag 13" />
+                        Colombia (COP $)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Croatia kn">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Croatia.png" alt="Flag 14" />
+                        Croatia (HRK kn)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Denmark kr">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Denmark.png" alt="Flag 15" />
+                        Denmark (DKK kr)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Dominican Republic RD$">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Dominican_Republic.png"
+                            alt="Flag 16" /> Dominican Republic (DOP RD$)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Egypt ج.م">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Egypt.png" alt="Flag 17" />
+                        Egypt (EGP ج.م)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Estonia €">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Estonia.png" alt="Flag 18" />
+                        Estonia (EUR €)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Ethiopia Br">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Ethiopia.png" alt="Flag 19" />
+                        Ethiopia (ETB Br)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Finland €">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Finland.png" alt="Flag 20" />
+                        Finland (EUR €)
+                    </li>
+                    <li class="country-dropdown-item" data-country="France €">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/France.png" alt="Flag 21" />
+                        France (EUR €)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Germany €">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Germany.png" alt="Flag 22" />
+                        Germany (EUR €)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Greece €">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Greece.png" alt="Flag 23" />
+                        Greece (EUR €)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Guatemala Q">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Guatemala.png" alt="Flag 24" />
+                        Guatemala (GTQ Q)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Honduras L">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Honduras.png" alt="Flag 25" />
+                        Honduras (HNL L)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Hungary Ft">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Hungary.png" alt="Flag 26" />
+                        Hungary (HUF Ft)
+                    </li>
+                    <li class="country-dropdown-item" data-country="India ₹">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/India.png" alt="Flag 27" />
+                        India (INR ₹)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Indonesia Rp">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Indonesia.png" alt="Flag 28" />
+                        Indonesia (IDR Rp)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Ireland €">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Ireland.png" alt="Flag 29" />
+                        Ireland (EUR €)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Israel ₪">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Israel.png" alt="Flag 30" />
+                        Israel (ILS ₪)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Italy €">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Italy.png" alt="Flag 31" />
+                        Italy (EUR €)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Japan ¥">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Japan.png" alt="Flag 32" />
+                        Japan (JPY ¥)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Jamaica $">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Jamaica.png" alt="Flag 33" />
+                        Jamaica (JMD $)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Kenya KSh">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Kenya.png" alt="Flag 34" />
+                        Kenya (KES KSh)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Kuwait د.ك">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Kuwait.png" alt="Flag 35" />
+                        Kuwait (KWD د.ك)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Latvia €">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Latvia.png" alt="Flag 36" />
+                        Latvia (EUR €)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Lebanon ل.ل">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Lebanon.png" alt="Flag 37" />
+                        Lebanon (LBP ل.ل)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Lithuania €">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Lithuania.png" alt="Flag 38" />
+                        Lithuania (EUR €)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Luxembourg €">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Luxembourg.png"
+                            alt="Flag 39" /> Luxembourg (EUR €)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Malaysia RM">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Malaysia.png" alt="Flag 40" />
+                        Malaysia (MYR RM)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Mexico $">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Mexico.png" alt="Flag 41" />
+                        Mexico (MXN $)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Morocco د.م.">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Morocco.png" alt="Flag 42" />
+                        Morocco (MAD د.م.)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Mozambique MT">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Mozambique.png"
+                            alt="Flag 43" /> Mozambique (MZN MT)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Myanmar K">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Myanmar.png" alt="Flag 44" />
+                        Myanmar (MMK K)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Nepal रू">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Nepal.png" alt="Flag 45" />
+                        Nepal (NPR रू)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Netherlands €">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Netherlands.png"
+                            alt="Flag 46" /> Netherlands (EUR €)
+                    </li>
+                    <li class="country-dropdown-item" data-country="New Zealand $">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/New_Zealand.png"
+                            alt="Flag 47" /> New Zealand (NZD $)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Nigeria ₦">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Nigeria.png" alt="Flag 48" />
+                        Nigeria (NGN ₦)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Oman ر.ع.">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Oman.png" alt="Flag 49" /> Oman
+                        (OMR ر.ع.)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Pakistan Rs">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Pakistan.png" alt="Flag 50" />
+                        Pakistan (PKR Rs)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Peru S/.">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Peru.png" alt="Flag 51" /> Peru
+                        (PEN S/.)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Philippines ₱">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Philippines.png"
+                            alt="Flag 52" /> Philippines (PHP ₱)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Poland zł">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Poland.png" alt="Flag 53" />
+                        Poland (PLN zł)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Qatar ر.ق">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Qatar.png" alt="Flag 54" />
+                        Qatar (QAR ر.ق)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Romania lei">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Romania.png" alt="Flag 55" />
+                        Romania (RON lei)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Russia ₽">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Russia.png" alt="Flag 56" />
+                        Russia (RUB ₽)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Saudi Arabia ر.س">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Saudi_Arabia.png"
+                            alt="Flag 57" /> Saudi Arabia (SAR ر.س)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Singapore $">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Singapore.png" alt="Flag 58" />
+                        Singapore (SGD $)
+                    </li>
+                    <li class="country-dropdown-item" data-country="South Africa R">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/South_Africa.png"
+                            alt="Flag 59" /> South Africa (ZAR R)
+                    </li>
+                    <li class="country-dropdown-item" data-country="South Korea ₩">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/South_Korea.png"
+                            alt="Flag 60" /> South Korea (KRW ₩)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Spain €">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Spain.png" alt="Flag 61" />
+                        Spain (EUR €)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Sri Lanka Rs">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Sri_Lanka.png" alt="Flag 62" />
+                        Sri Lanka (LKR Rs)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Thailand ฿">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Thailand.png" alt="Flag 63" />
+                        Thailand (THB ฿)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Turkey ₺">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Turkey.png" alt="Flag 64" />
+                        Turkey (TRY ₺)
+                    </li>
+                    <li class="country-dropdown-item" data-country="United Kingdom £">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/United_Kingdom.png"
+                            alt="Flag 65" /> United Kingdom (GBP £)
+                    </li>
+                    <li class="country-dropdown-item" data-country="United States $">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/United_States.png"
+                            alt="Flag 66" /> United States (USD $)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Ukraine ₴">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Ukraine.png" alt="Flag 67" />
+                        Ukraine (UAH ₴)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Venezuela Bs.S">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Venezuela.png" alt="Flag 68" />
+                        Venezuela (VES Bs.S)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Vietnam ₫">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Vietnam.png" alt="Flag 69" />
+                        Vietnam (VND ₫)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Yemen ﷼">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Yemen.png" alt="Flag 70" />
+                        Yemen (YER ﷼)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Zambia ZK">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Zambia.png" alt="Flag 71" />
+                        Zambia (ZMW ZK)
+                    </li>
+                    <li class="country-dropdown-item" data-country="Zimbabwe Z$">
+                        <img class="country-flag-icon" src="/assets/images/country-flags/Zimbabwe.png" alt="Flag 72" />
+                        Zimbabwe (ZWL Z$)
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                    fill="#e8eaed">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#e8eaed">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </label>
+
+                <a class="nav-pages" href="/pages/home.html">Home</a>
+                <div class="dropdown1">
+                    <button class="dropdown1-button">Products
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                    </button>
+                    <div class="dropdown1-content">
+                        <a class="nav-pages" href="/pages/product-all.html">All Products</a>
+                        <a class="nav-pages" href="/pages/product-popular.html">Popular Products</a>
+                        <a class="nav-pages" href="/pages/product-new-arrivals.html">New Arrivals</a>
+                    </div>
+                </div>
+                <a class="nav-pages" href="/pages/gift-card.html">Gift Cards</a>
+                <a class="nav-pages" href="/pages/store-locations.html">Stores</a>
+                <a class="nav-pages" href="/pages/about-us.html">About Us</a>
+                <a class="nav-pages" href="/pages/work-with-us.html">Be One of Us</a>
+                <a class="nav-pages" href="/pages/vip-program.html"><span style="color: red;">VIP</span></a>
+            </div>
+
+            <div class="right-buttons">
+                <a href="#" class="search-icon" onclick="openSearch()"> <!-- Existing search icon button -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                        fill="#e8eaed">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg>
+                </a>
+                <div id="searchOverlay" class="search-overlay"> <!-- Search Overlay -->
+                    <span class="closebtn" onclick="closeSearch()">×</span>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search here...">
+                        <div class="search-button-container">
+                            <button type="submit">Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <a href="/pages/cart.html" class="cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                            fill="#e8eaed">
+                            <path
+                                d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+                        </svg>
+                        <span>0</span>
+                    </a>
+                </div>
+                <a href="/pages/contact-us.html" class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                        fill="#e8eaed">
+                        <path
+                            d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+                    </svg>
+                </a>
+
+                <a href="#" class="login-icon" onclick="openLoginPopup()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                        fill="#e8eaed">
+                        <path
+                            d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+                    </svg>
+                </a>
+                <!-- Login Popup Modal -->
+                <div id="loginPopup" class="login-popup">
+                    <div class="login-content">
+                        <span class="close-btn" onclick="closeLoginPopup()">&times;</span>
+                        <h2>Login</h2>
+                        <form class="login-form-container">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+
+                            <!-- Remember Me Checkbox -->
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember" name="remember">
+                                <label for="remember" id="remember-me" id="remember-me">Remember me</label>
+                            </div>
+
+                            <!-- Login and Forgot Password in the Same Row -->
+                            <div class="login-row">
+                                <button type="submit" class="login-button">Login</button>
+                                <a href="#" class="forgot-password">Forgot Password?</a>
+                            </div>
+
+                            <div class="signup-link-div">
+                                <p>Don’t have an account?</p> <a href="/pages/signup.html">Sign up</a>
+                            </div>
+
+                            <!-- Divider with "or Login with" text -->
+                            <div class="divider">
+                                <hr>
+                                <span>or Login with</span>
+                                <hr>
+                            </div>
+
+                            <!-- Social Login Links -->
+                            <div class="social-login">
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px"
+                                        height="48px">
+                                        <linearGradient id="Ld6sqrtcxMyckEl6xeDdMa" x1="9.993" x2="40.615" y1="9.993"
+                                            y2="40.615" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#2aa4f4" />
+                                            <stop offset="1" stop-color="#007ad9" />
+                                        </linearGradient>
+                                        <path fill="url(#Ld6sqrtcxMyckEl6xeDdMa)"
+                                            d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z" />
+                                        <path fill="#fff"
+                                            d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z" />
+                                    </svg> Facebook
+                                </a>
+                                <a href="https://www.google.com" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px"
+                                        height="48px">
+                                        <path fill="#FFC107"
+                                            d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z" />
+                                        <path fill="#FF3D00"
+                                            d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z" />
+                                        <path fill="#4CAF50"
+                                            d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z" />
+                                        <path fill="#1976D2"
+                                            d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z" />
+                                    </svg> Google
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <!-------------------------------------------------- Filter Window / Dropdown List-------------------------------------------------->
+        <div id="top-bar">
+            <!------------------------- Filter Window ------------------------->
+            <div class="div1">
+                <button id="open-filter-btn">Open Filter</button>
+            
+                <!-- Filter Popup Modal -->
+                <div id="filter-modal"  class="filter-modal">
+                    <div class="filter-content">
+                        <div id="close-filter" class="close">&times;</div>
+                        <h2>Product Filters</h2>
+            
+                        <!-- Search Bar -->
+                        <div class="filter-section-1">
+                            <div class="remove-btn">
+                                <label for="search-bar">Search</label>
+                                <a href="#" class="remove-link">Remove</a>
+                            </div>
+                            <input type="text" id="search-bar" placeholder="Search products...">              
+                        </div>
+            
+                        <!-- Price Range Bar -->
+                        <div class="filter-section-2">
+                            <div class="remove-btn">
+                                <label for="price-range">Price: <i>Rs.0 - Rs.10,000</i></label>
+                                <a href="#" class="remove-link">Remove</a>
+                            </div>    
+                            <input type="range" id="price-range" min="0" max="10000" value="5000" step="100">
+                        </div>
+            
+                        <!-- Rating Selection -->
+                        <div class="filter-section-3">
+                            <div class="label">
+                                <section>Rating</section>
+                                <a href="#" class="remove-link">Remove</a>
+                            </div>
+                            <div class="content">
+                                <input type="radio" name="rating" id="rating-5" value="5" checked>
+                                <label for="rating-5"><img src="/assets/images/star/5-1.png" class="star"></label>
+                            
+                                <input type="radio" name="rating    " id="rating-4" value="4">
+                                <label for="rating-4"><img src="/assets/images/star/4-1.png" class="star"></label>
+                        
+                                <input type="radio" name="rating" id="rating-3" value="3">
+                                <label for="rating-3"><img src="/assets/images/star/3-1.png" class="star"></label>
+                        
+                                <input type="radio" name="rating" id="rating-2" value="2">
+                                <label for="rating-2"><img src="/assets/images/star/2-1.png" class="star"></label>
+                        
+                                <input type="radio" name="rating" id="rating-1" value="1">
+                                <label for="rating-1"><img src="/assets/images/star/1-1.png" class="star"></label>
+                            </div>
+                        </div>
+            
+                        <!-- Size Selection -->
+                        <div class="size-options">
+                            <div class="label">
+                                <section>Size</section>
+                                <a href="#" class="remove-link">Remove</a>
+                            </div>
+                            <div class="content" id="size-options">
+                                <input type="radio" id="size-xs" name="size" value="XS">
+                                <label for="size-xs">XS</label>
+                            
+                                <input type="radio" id="size-s" name="size" value="S">
+                                <label for="size-s">S</label>
+                            
+                                <input type="radio" id="size-m" name="size" value="M">
+                                <label for="size-m">M</label>
+                            
+                                <input type="radio" id="size-l" name="size" value="L" checked>
+                                <label for="size-l">L</label>
+                            
+                                <input type="radio" id="size-xl" name="size" value="XL">
+                                <label for="size-xl">XL</label>
+                            
+                                <input type="radio" id="size-xxl" name="size" value="XXL">
+                                <label for="size-xxl">XXL</label>
+                            
+                                <input type="radio" id="size-3xl" name="size" value="3XL">
+                                <label for="size-3xl">3XL</label>
+                            </div>
+                        </div>
+            
+                        <!-- Stock Status -->
+                        <div class="filter-section">
+                            <div class="switch-container">
+                                <!-- In Stock Switch -->
+                                <div class="stock-button">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>In Stock</span>
+                                </div>
+                                
+                                <!-- Coming Soon Switch -->
+                                <div class="stock-button">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Coming Soon</span>
+                                </div>
+                            </div>
+                            <a href="#" class="remove-link">Remove</a>
+                        </div>
+            
+                        <!-- Apply Button -->
+                        <button id="apply-filter" class="apply-button">Apply</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!------------------------- Dropdown List ------------------------->
+            <div class="div2">
+                <label for="customDropdown">Sort by:</label>
+                <div id="customDropdown" class="custom-dropdown">
+                    <div class="selected-option">Featured</div>
+                    <ul class="dropdown-options">
+                        <li class="dropdown-option" data-value="option1">Featured</li>
+                        <li class="dropdown-option" data-value="option2">Best Selling</li>
+                        <li class="dropdown-option" data-value="option3">Alphabetically; A-Z</li>
+                        <li class="dropdown-option" data-value="option4">Alphabetically; Z-A</li>
+                        <li class="dropdown-option" data-value="option5">Price; Low to High</li>
+                        <li class="dropdown-option" data-value="option6">Price; High to Low</li>
+                        <li class="dropdown-option" data-value="option7">Date; Old to New</li>
+                        <li class="dropdown-option" data-value="option8">Date; New to Old</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-------------------------------------------------- Product Cards with Quick Add Button -------------------------------------------------->
+        <div id="products-container-pop" class="container-product-pop"></div>
+        
+        <!-- Quick Add Popup Structure -->
+        <div class="quick-add-overlay-pop" id="quickAddOverlayPop"></div>
+        <div class="quick-add-popup-pop" id="quickAddPopupPop">
+            <button class="close-popup-pop" onclick="closeQuickAddPopup()">×</button>
+            <div class="popup-content-pop">
+                <!-- Product Image and Info -->
+                <div class="popup-product-info-pop">
+                    <div class="popup-product-image-pop">
+                        <img src="" alt="Product" class="small-product-image-pop" id="popupProductImagePop">
+                    </div>
+                    <div class="popup-product-details-pop">
+                        <p class="popup-product-name-pop" id="popupProductNamePop"></p>
+                        <p class="popup-product-price-pop" id="popupProductPricePop"></p>
+                    </div>
+                </div>
+                <hr>
+                <!-- Size Options -->
+                <div class="popup-size-options-pop">
+                    <input type="radio" id="size-xs" name="size" value="XS">
+                    <label for="size-xs">XS</label>
+                
+                    <input type="radio" id="size-s" name="size" value="S">
+                    <label for="size-s">S</label>
+                
+                    <input type="radio" id="size-m" name="size" value="M">
+                    <label for="size-m">M</label>
+                
+                    <input type="radio" id="size-l" name="size" value="L" checked>
+                    <label for="size-l">L</label>
+                
+                    <input type="radio" id="size-xl" name="size" value="XL">
+                    <label for="size-xl">XL</label>
+                
+                    <input type="radio" id="size-xxl" name="size" value="XXL">
+                    <label for="size-xxl">XXL</label>
+                
+                    <input type="radio" id="size-3xl" name="size" value="3XL">
+                    <label for="size-3xl">3XL</label>
+                </div>          
+                <!-- Buttons -->
+                <div class="popup-buttons-pop">
+                    <button class="add-to-cart-button-pop">Add to Cart</button>
+                    <button class="buy-now-button-pop">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    
+
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-responsive">
+                    <div class="information-div">
+                        <h3>Information</h3>
+                        <p>
+                            <a href="/pages/home.html">Home</a><br>
+                            <a href="/pages/product-all.html">Products</a><br>
+                            <a href="/pages/gift-card.html">Gift Cards</a><br>
+                            <a href="/pages/about-us.html">About Us</a><br>
+                            <a href="/pages/vip-program.html">VIP Program</a><br>
+                            <a href="/pages/work-with-us.html">Be One of Us</a><br>
+                            <a href="/pages/portfolio.html">Portfolio</a><br>
+                            <a href="/pages/blog.html">Blog</a><br>
+                            <a href="/pages/privacy-policy.html">Privacy Policy</a><br>
+                            <a href="/pages/terms-and-conditions.html">Terms & Conditions</a><br>
+                        </p>
+                    </div>
+                    <div class="support-div">
+                        <h3>Support</h3>
+                        <p>
+                            <a href="/pages/signup.html">Login / Sign Up</a><br>
+                            <a href="/pages/services.html">Shipping, Return & Refond</a><br>
+                            <a href="/pages/contact-us.html">Contact Us</a><br>
+                            <a href="/pages/store-locations.html">Stores</a><br>
+                            <a href="#">FAQs</a>
+                        </p>
+                        <div class="support-center">
+                            <h3>Support Center</h3>
+                            <p>Hot-line: 104 or 14414</p><br>
+                            <p>Tel No: +94 31 3131 444</p><br>
+                            <section>Email:<a href="mailto:contact@yourcompany.com">jd-clothing.info@gmail.com</a>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="work-time-div">
+                        <h3>Online Store Working Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM SLST</p>
+                        <p>Saturday: 9:00 AM - 2:00 PM SLST </p>
+                        <p>Sunday: Closed</p>
+                        <p>*excluding public holiday</p>
+
+                        <div class="icons">
+                            <a href="https://www.instagram.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+                                    <radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#fd5" />
+                                        <stop offset=".328" stop-color="#ff543f" />
+                                        <stop offset=".348" stop-color="#fc5245" />
+                                        <stop offset=".504" stop-color="#e64771" />
+                                        <stop offset=".643" stop-color="#d53e91" />
+                                        <stop offset=".761" stop-color="#cc39a4" />
+                                        <stop offset=".841" stop-color="#c837ab" />
+                                    </radialGradient>
+                                    <path fill="url(#yOrnnhliCrdS2gy~4tD8ma)"
+                                        d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z" />
+                                    <radialGradient id="yOrnnhliCrdS2gy~4tD8mb" cx="11.786" cy="5.54" r="29.813"
+                                        gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#4168c9" />
+                                        <stop offset=".999" stop-color="#4168c9" stop-opacity="0" />
+                                    </radialGradient>
+                                    <path fill="url(#yOrnnhliCrdS2gy~4tD8mb)"
+                                        d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z" />
+                                    <path fill="#fff"
+                                        d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z" />
+                                    <circle cx="31.5" cy="16.5" r="1.5" fill="#fff" />
+                                    <path fill="#fff"
+                                        d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/" class="fb">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+                                    <linearGradient id="Ld6sqrtcxMyckEl6xeDdMa" x1="9.993" x2="40.615" y1="9.993"
+                                        y2="40.615" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#2aa4f4" />
+                                        <stop offset="1" stop-color="#007ad9" />
+                                    </linearGradient>
+                                    <path fill="#1877F2"
+                                        d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z" />
+                                    <path fill="#fff"
+                                        d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.tiktok.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"
+                                    fill-rule="evenodd" clip-rule="evenodd">
+                                    <linearGradient id="dYJkfAQNfP2dCzgdw4ruIa" x1="23.672" x2="23.672" y1="6.365"
+                                        y2="42.252" gradientTransform="translate(.305 -.206)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#4c4c4c" />
+                                        <stop offset="1" stop-color="#343434" />
+                                    </linearGradient>
+                                    <path fill="url(#dYJkfAQNfP2dCzgdw4ruIa)"
+                                        d="M40.004,41.969L8.031,42c-1.099,0.001-1.999-0.897-2-1.996L6,8.031	c-0.001-1.099,0.897-1.999,1.996-2L39.969,6c1.099-0.001,1.999,0.897,2,1.996L42,39.969C42.001,41.068,41.103,41.968,40.004,41.969z" />
+                                    <path fill="#ec407a" fill-rule="evenodd"
+                                        d="M29.208,20.607c1.576,1.126,3.507,1.788,5.592,1.788v-4.011	c-0.395,0-0.788-0.041-1.174-0.123v3.157c-2.085,0-4.015-0.663-5.592-1.788v8.184c0,4.094-3.321,7.413-7.417,7.413	c-1.528,0-2.949-0.462-4.129-1.254c1.347,1.376,3.225,2.23,5.303,2.23c4.096,0,7.417-3.319,7.417-7.413V20.607L29.208,20.607z M30.657,16.561c-0.805-0.879-1.334-2.016-1.449-3.273v-0.516h-1.113C28.375,14.369,29.331,15.734,30.657,16.561L30.657,16.561z M19.079,30.832c-0.45-0.59-0.693-1.311-0.692-2.053c0-1.873,1.519-3.391,3.393-3.391c0.349,0,0.696,0.053,1.029,0.159v-4.1	c-0.389-0.053-0.781-0.076-1.174-0.068v3.191c-0.333-0.106-0.68-0.159-1.03-0.159c-1.874,0-3.393,1.518-3.393,3.391	C17.213,29.127,17.972,30.274,19.079,30.832z"
+                                        clip-rule="evenodd" />
+                                    <path fill="#fff" fill-rule="evenodd"
+                                        d="M28.034,19.63c1.576,1.126,3.507,1.788,5.592,1.788v-3.157	c-1.164-0.248-2.194-0.856-2.969-1.701c-1.326-0.827-2.281-2.191-2.561-3.788h-2.923V28.79c-0.007,1.867-1.523,3.379-3.393,3.379	c-1.102,0-2.081-0.525-2.701-1.338c-1.107-0.558-1.866-1.705-1.866-3.029c0-1.873,1.519-3.391,3.393-3.391	c0.359,0,0.705,0.056,1.03,0.159v-3.19c-4.024,0.083-7.26,3.369-7.26,7.411c0,2.018,0.806,3.847,2.114,5.183	c1.18,0.792,2.601,1.254,4.129,1.254c4.096,0,7.417-3.319,7.417-7.413L28.034,19.63L28.034,19.63z"
+                                        clip-rule="evenodd" />
+                                    <path fill="#81d4fa" fill-rule="evenodd"
+                                        d="M33.626,18.262v-0.854c-1.05,0.002-2.078-0.292-2.969-0.848	C31.445,17.423,32.483,18.018,33.626,18.262z M28.095,12.772c-0.027-0.153-0.047-0.306-0.061-0.461v-0.516h-4.036v16.019	c-0.006,1.867-1.523,3.379-3.393,3.379c-0.549,0-1.067-0.13-1.526-0.362c0.62,0.813,1.599,1.338,2.701,1.338	c1.87,0,3.386-1.512,3.393-3.379V12.772H28.095z M21.635,21.38v-0.909c-0.337-0.046-0.677-0.069-1.018-0.069	c-4.097,0-7.417,3.319-7.417,7.413c0,2.567,1.305,4.829,3.288,6.159c-1.308-1.336-2.114-3.165-2.114-5.183	C14.374,24.749,17.611,21.463,21.635,21.38z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <a href="https://www.youtube.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+                                    <path fill="#FF3D00"
+                                        d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z" />
+                                    <path fill="#FFF" d="M20 31L20 17 32 24z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.pinterest.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+                                    <linearGradient id="IfhrvZkWi8LOXjspG~Pupa" x1="14.899" x2="33.481" y1="43.815"
+                                        y2="7.661" gradientTransform="matrix(1 0 0 -1 .108 50.317)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#f22543" />
+                                        <stop offset=".422" stop-color="#eb2239" />
+                                        <stop offset="1" stop-color="#e52030" />
+                                    </linearGradient>
+                                    <path fill="url(#IfhrvZkWi8LOXjspG~Pupa)"
+                                        d="M44,23.9810009C44.0110016,35.026001,35.0639992,43.9889984,24.0189991,44	S4.0110002,35.0639992,4,24.0189991C3.9890001,12.974,12.9359999,4.0110002,23.9810009,4	C35.026001,3.9890001,43.9889984,12.9359999,44,23.9810009z" />
+                                    <path
+                                        d="M37.7729988,22.9680004c0-7.1560001-5.7299995-12.552-13.3299999-12.552	c-9.7670002,0-14.2150002,6.7919998-14.2150002,13.1040001c0,3.1480007,1.625,7.2519989,4.6370001,8.6549988	c0.4860001,0.2270012,0.9300003,0.2439995,1.3210001,0.0550003c0.2609997-0.1259995,0.6030006-0.4029999,0.7420006-0.9950008	l0.5559998-2.2689991c0.1259995-0.5289993,0.0130005-1.0139999-0.3390007-1.4419994	c-0.6259995-0.7600002-1.2609997-2.3540001-1.2609997-3.9300003c0-3.7229996,2.8139992-7.6800003,8.0299988-7.6800003	c4.3299999,0,7.3540001,2.9349995,7.3540001,7.1369991c0,4.7270012-2.223999,8.1580009-5.2870007,8.1580009	c-0.6819992,0-1.289999-0.2740002-1.6679993-0.7520008c-0.3509998-0.4440002-0.4640007-1.0230007-0.3209991-1.6310005	c0.1959991-0.8260002,0.4650002-1.6940002,0.7240009-2.5340004c0.4939995-1.5979996,0.9599991-3.1070004,0.9599991-4.3549995	c0-2.282999-1.4190006-3.816-3.5300007-3.816c-2.5900002,0-4.618,2.5720005-4.618,5.855999	c0,1.4130001,0.3430004,2.5170002,0.5499992,3.0559998c-0.3649998,1.5440006-1.9489994,8.2490005-2.2700005,9.6269989	c-0.3839998,1.6399994-0.3070002,3.8040009-0.1479998,5.5009995c1.0940008,0.5029984,2.2400007,0.9059982,3.4299994,1.2070007	c0.7719994-1.2789993,1.9710007-3.4389992,2.4419994-5.2490005c0.132-0.5079994,0.4880009-1.8660011,0.7859993-3.0009995	c1.0979996,0.7939987,2.585001,1.2910004,4.0760002,1.2910004C32.882,36.4080009,37.7729988,30.6299992,37.7729988,22.9680004z"
+                                        opacity=".05" />
+                                    <path
+                                        d="M37.2729988,22.9680004c0-6.8710003-5.5159988-12.052-12.8299999-12.052	c-9.4230003,0-13.7150002,6.5330009-13.7150002,12.6040001c0,3.0359993,1.6260004,6.934,4.349,8.2019997	c0.1269999,0.0599995,0.5159998,0.2409992,0.8920002,0.059c0.2379999-0.1159992,0.3979998-0.3390007,0.474-0.6620007	l0.5550003-2.2679996c0.0890007-0.3740005,0.0119991-0.7040005-0.2390003-1.0079994	c-0.809-0.9820004-1.375-2.7290001-1.375-4.2479992c0-3.9650002,2.9899998-8.1800003,8.5299988-8.1800003	c4.6240005,0,7.8540001,3.1399994,7.8540001,7.637001c0,5.0170002-2.434,8.6580009-5.7870007,8.6580009	c-0.8349991,0-1.5860004-0.3430004-2.0599995-0.9419994c-0.448-0.566-0.5949993-1.2970009-0.4150009-2.0569992	c0.2000008-0.842001,0.4710007-1.7180004,0.7329998-2.566c0.4820004-1.5610008,0.9379997-3.0349998,0.9379997-4.2080002	c0-1.9839993-1.2180004-3.316-3.0300007-3.316c-2.309,0-4.118,2.3530006-4.118,5.3560009	c0,1.493,0.3990002,2.6049995,0.573,3.0179996c-0.2789993,1.1800003-1.9729996,8.3479977-2.3059998,9.7790012	c-0.3909998,1.6749992-0.2819996,3.9440002-0.1070004,5.6409988c0.7730007,0.3279991,1.5769997,0.5940018,2.3959999,0.8240013	c0.7520008-1.2330017,1.993-3.4350014,2.4640007-5.2449989c0.1639996-0.6300011,0.6709995-2.5629997,0.9860001-3.762001	c1.0139999,1.0089989,2.6809998,1.6780014,4.3600006,1.6780014C32.5970001,35.9080009,37.2729988,30.3449993,37.2729988,22.9680004z"
+                                        opacity=".07" />
+                                    <path fill="#FFF"
+                                        d="M24.4430008,11.4169998c-8.632,0-13.2150002,5.7950001-13.2150002,12.1030006	c0,2.9330006,1.5620003,6.5849991,4.0599995,7.7480011c0.3780003,0.177,0.5819998,0.1000004,0.6680002-0.2670002	c0.0670004-0.2779999,0.4030008-1.6369991,0.5549994-2.2679996c0.0480003-0.2019997,0.0249996-0.375-0.1380005-0.573	c-0.8269997-1.0030003-1.4879999-2.8470001-1.4879999-4.5650005c0-4.4120007,3.3399992-8.6800003,9.0299997-8.6800003	c4.9130001,0,8.3529987,3.3479996,8.3529987,8.137001c0,5.4099998-2.7320004,9.1580009-6.2870007,9.1580009	c-1.9629993,0-3.4330006-1.6229992-2.9619999-3.6149998c0.5650005-2.3770008,1.6569996-4.9419994,1.6569996-6.657999	c0-1.5349998-0.823-2.8169994-2.5300007-2.8169994c-2.007,0-3.618,2.0750008-3.618,4.8570004	c0,1.7700005,0.5979996,2.9680004,0.5979996,2.9680004s-1.9820004,8.3819981-2.3449993,9.9419994	c-0.4020004,1.7220001-0.2460003,4.1409988-0.0709991,5.7229996c0.4510002,0.1769981,0.9020004,0.3540001,1.3689995,0.4990005	c0.8169994-1.3279991,2.0340004-3.5060005,2.4860001-5.2420006c0.243-0.9370003,1.2469997-4.7550011,1.2469997-4.7550011	c0.6520004,1.243,2.5569992,2.2970009,4.5830002,2.2970009c6.0320015,0,10.3779984-5.5470009,10.3779984-12.4399986	C36.7729988,16.3600006,31.382,11.4169998,24.4430008,11.4169998z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.whatsapp.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"
+                                    fill-rule="evenodd" clip-rule="evenodd">
+                                    <path fill="#fff"
+                                        d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z" />
+                                    <path fill="#fff"
+                                        d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z" />
+                                    <path fill="#cfd8dc"
+                                        d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z" />
+                                    <path fill="#40c351"
+                                        d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z" />
+                                    <path fill="#fff" fill-rule="evenodd"
+                                        d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <a href="https://www.twitter.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"
+                                    baseProfile="basic">
+                                    <linearGradient id="U8Yg0Q5gzpRbQDBSnSCfPa" x1="4.338" x2="38.984" y1="-10.056"
+                                        y2="49.954" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#4b4b4b" />
+                                        <stop offset=".247" stop-color="#3e3e3e" />
+                                        <stop offset=".686" stop-color="#2b2b2b" />
+                                        <stop offset="1" stop-color="#252525" />
+                                    </linearGradient>
+                                    <path fill="url(#U8Yg0Q5gzpRbQDBSnSCfPa)"
+                                        d="M38,42H10c-2.209,0-4-1.791-4-4V10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28	C42,40.209,40.209,42,38,42z" />
+                                    <path fill="#fff"
+                                        d="M34.257,34h-6.437L13.829,14h6.437L34.257,34z M28.587,32.304h2.563L19.499,15.696h-2.563 L28.587,32.304z" />
+                                    <polygon fill="#fff" points="15.866,34 23.069,25.656 22.127,24.407 13.823,34" />
+                                    <polygon fill="#fff" points="24.45,21.721 25.355,23.01 33.136,14 31.136,14" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h3>newsletter sign up</h3>
+                    <p>Sign up for exclusive updates, new arrivals & insider only discounts</p>
+                    <input type="text" class="name" name="name" placeholder="Enter your name" required><br>
+                    <input type="email" class="email" name="email" placeholder="Enter your email" required><br>
+                    <button type="submit" class="register">Register</button>
+
+                    <div class="os-icons">
+                        <h3>download app</h3>
+                        <a href="https://www.apple.com/app-store/" target="_blank">
+                            <svg height="30" preserveAspectRatio="xMidYMid" viewBox="0 0 256 256" width="30"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+                                    <stop offset="0" stop-color="#17c9fb" />
+                                    <stop offset="1" stop-color="#1a74e8" />
+                                </linearGradient>
+                                <path
+                                    d="m56.0638473 0h143.8723057c30.963208 0 56.063847 25.1006394 56.063847 56.0638473v143.8723057c0 30.963208-25.100639 56.063847-56.063847 56.063847h-143.8723057c-30.9632079 0-56.0638473-25.100639-56.0638473-56.063847v-143.8723057c0-30.9632079 25.1006394-56.0638473 56.0638473-56.0638473z"
+                                    fill="url(#a)" />
+                                <path
+                                    d="m82.041678 185.810289.0240687.0076-8.7526543 15.160002c-3.1948063 5.533779-10.2712641 7.429888-15.8050435 4.234828-5.533526-3.194553-7.4296347-10.27101-4.2348284-15.80479l6.4478841-11.167887.6186929-1.071692c1.1051344-1.588789 3.8322473-4.329583 9.2872333-3.814512 0 0 12.8367366 1.393199 13.7655359 8.065049.0002534 0 .1269309 2.195574-1.3508887 4.391402zm124.143432-38.721002h-27.294185c-1.858612-.124397-2.670615-.788187-2.989082-1.174046l-.020269-.035217-29.217656-50.6061362-.03775.0253355-1.752456-2.5125213c-2.871525-4.3914018-7.431661 6.8405844-7.431661 6.8405844-5.444599 12.5154826.772479 26.7451646 2.940437 31.0458656l40.581387 70.289031c3.194553 5.533779 10.271011 7.429888 15.80479 4.234828 5.533526-3.194553 7.429635-10.27101 4.234829-15.80479l-10.147881-17.576248c-.19635-.425636-.538632-1.582202 1.542425-1.586762h13.787072c6.389865 0 11.569961-5.180096 11.569961-11.569962s-5.180096-11.569962-11.569961-11.569962zm-53.014022 15.729037s1.456791 7.410633-4.180358 7.410633h-5.637148v.000254h-95.2617241c-6.3898659 0-11.5699617-5.180096-11.5699617-11.569962s5.1800958-11.569962 11.5699617-11.569962h25.9400025c4.1879578-.242714 5.1808559-2.660227 5.1808559-2.660227l.022802.011655 33.8603857-58.6481304-.010134-.0020269c.617426-1.1330034.103369-2.2034282.013934-2.3729227l-11.182328-19.3682278c-3.1950597-5.5337794-1.298951-12.6099839 4.234828-15.8047902 5.53378-3.1950596 12.609731-1.2989509 15.80479 4.2348285l5.186177 8.982954 5.177055-8.9669927c3.194807-5.5337794 10.271011-7.429888 15.80479-4.2348284 5.53378 3.1950596 7.429888 10.2712641 4.234829 15.8047901l-47.117692 81.6099445c-.205977.496829-.269063 1.276656 1.263735 1.413974h28.164206l.00608.274384s16.278057.253355 18.494914 15.454653z"
+                                    fill="#fff" />
+                            </svg> <span>iOS App</span>
+                        </a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="https://play.google.com/store" target="_blank">
+                            <svg height="30" preserveAspectRatio="xMidYMid" viewBox="0 0 256 274" width="30"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m188.81319 178.874645c32.459028-17.822918 57.067107-31.403792 59.188129-32.459027 6.785161-3.608904 13.791921-13.15878 0-20.577082-4.453091-2.332069-28.42803-15.490849-59.188129-32.4590268l-42.642044 43.0641388z"
+                                    fill="#ffd900" />
+                                <path
+                                    d="m146.171146 136.443648-135.7770817 136.842869c3.1868096.422094 6.7851608-.422094 11.0272053-2.754164 8.906183-4.875185 103.3180544-56.433965 167.3919204-91.647155z"
+                                    fill="#f43249" />
+                                <path
+                                    d="m146.171146 136.443648 42.642044-42.8530918s-157.8420441-86.13882935-167.3919204-91.22506183c-3.5983512-2.13157461-7.6293487-2.76471558-11.2382523-2.13157461z"
+                                    fill="#00ee76" />
+                                <path
+                                    d="m146.171146 136.443648-135.9881287-136.20972824c-5.5188788 1.27683429-10.1830173 6.15201978-10.1830173 16.12399014v240.8046171c0 9.127782 3.60890354 15.701896 10.3940643 16.335037z"
+                                    fill="#00d3ff" />
+                            </svg> <span>Android App</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right-mark">
+                <p>&copy; Copyright 2023 - JD STYLE. All rights reserved. &nbsp; Conceived, Designed & Developed by <a
+                        href="https://github.com/dulaj2003" class="custom-link"><span>DULAJ
+                            JAYASINGHA</span></a></p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="/js/sharded/page-header.js"></script>
+    <script src="/js/pages/product-popular.js"></script>
+</body>
+</html>
+
+

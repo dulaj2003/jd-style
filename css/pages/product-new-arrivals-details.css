@@ -1,0 +1,540 @@
+/* Product Details Page */
+.product-details-container {
+    display: flex;
+    gap: 20px;
+    padding: 80px 0 0 ;
+    justify-content: center;
+}
+
+/* Set specific width and height for the product image */
+.product-image img {
+    width:280px;    /* Fixed width for all product images */
+    height: 370px;   /* Fixed height for all product images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px; /* Retains existing styling */
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#productName {
+    font-size: 30px;
+    padding: 16px 0 0;
+}
+
+.product-sizes {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.product-discription {
+    line-height: 1.4;
+}
+
+.product-discription p {
+    font-size: 17px;
+}
+
+.product-discription ul {
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+/* Hide radio input, display only label as button */
+.product-sizes input[type="radio"] {
+    display: none;
+}
+
+/* Style labels as buttons for each size */
+.product-sizes label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    font-weight: bold;
+    border: 2px solid #1511df;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #1511df;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Highlight selected size */
+.product-sizes input[type="radio"]:checked + label {
+    background-color: #1511df;
+    color: white;
+}
+
+.container {
+    display: flex;
+    width: auto;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+/* Quantity Section */
+.product-quantity {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px; /* space between buttons and quantity */
+    background-color: #f4f4f4;
+    border-radius: 50px;
+    width: fit-content; /* Ensures the div width wraps around the content */
+    margin: 0 auto; /* Centers .product-quantity within its parent */
+    padding: 2px 1px; 
+    width: 170px;
+    border: 1px solid rgb(150, 150, 150);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px; 
+    height: 15px; 
+    cursor: pointer;
+    padding: 10px; /* Additional padding for larger clickable area */
+}
+
+
+#txtQty {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+/* Size Guide styling */
+.size-guide {
+    margin-left: auto; /* Pushes size guide link to the right */
+    justify-content: center;
+    align-items: center;
+}
+
+.size-guide-link {
+    font-size: 15px;
+    text-decoration: none;
+    color: #585858;
+}
+
+.size-guide-link svg {
+    fill: #585858;
+}
+
+.size-guide-link:hover {
+    color: #000000;
+}
+
+.size-guide-link:hover svg {
+    fill: rgb(0, 0, 0);
+}
+
+#productPrice {
+    font-size: 20px;
+    color: #333;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 0 12px;
+}
+
+.add-to-cart-button, .buy-now-button {
+    flex: 1;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 45px;
+}
+
+.add-to-cart-button {
+    background-color: #1411df;
+    color: white;
+}
+
+.buy-now-button {
+    background-color: #000000;
+    color: white;
+}
+
+.add-to-cart-button:hover {
+    background-color: #1411dfcb;
+}
+
+.buy-now-button:hover {
+    background-color: #000000d0;
+}
+
+@media (max-width: 642px) {
+    .product-details-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Make it a single-column layout */
+        gap: 1rem;
+        justify-content: center; 
+        align-items: center; 
+        padding: 50px 0 0 ;
+    }   
+
+    .product-image {
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    .product-info {
+        width: 100%; 
+        max-width: 320px; 
+        margin: 0 auto; /* Center the content horizontally */
+    }
+
+   
+}
+
+
+
+
+
+
+/*----------------------------------------------------------- horizontal scroller -----------------------------------------------------------------------*/
+/* Title styling */
+.related-products-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 60px 0 5px;
+    color: #333;
+}
+
+/* Related Products Container (Horizontal Scroll) */
+.related-products-container {
+    display: flex;
+    gap: 35px;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Product Box Styling */
+.box {
+    background-color: #e0e0e0;
+    color: #333;
+    border: 1px solid #f5f5f5;
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 200px; 
+    flex-shrink: 0; /* Prevents shrinking in horizontal scroll */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out; /* Smooth transition*/
+}
+
+.box:hover {
+    transform: scale(1.06);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image div styling */
+.img-div {
+    height: 260px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom:0;
+    transition: background-image 0.5s ease; 
+}
+
+/* Product Name */
+.product-name {
+    font-size: 20px;
+    margin: 8px 0;
+    color: #333;
+    font-weight:bold ;
+}
+
+/* Product Details (Price and Button on the same line) */
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Product Price */
+.product-price {
+    font-size: 16px;
+    color: black;
+}
+
+/* Quick Add Button */
+.quick-add-button {
+    padding: 8px 12px;
+    background-color: #1511df;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.quick-add-button:hover {
+    background-color: #000000;
+}
+/* Overlay for Popup Background */
+.quick-add-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Darker overlay */
+    z-index: 10;
+}
+
+
+/*-------------------------------------------------- style for arrow buttons --------------------------------------------------*/
+/* Wrapper to position arrows and container */
+.related-products-wrapper {
+    position: relative;
+    max-width: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Horizontal scroll container */
+.related-products-container {
+    display: flex;
+    gap: 35px;
+    overflow-x: hidden; /* Allows horizontal scrolling */
+    padding: 20px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    max-width: 100%; 
+}
+
+/*---------- Left and Right Scroll Buttons ----------*/
+.scroll-left, .scroll-right {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+.scroll-left {
+    left: 50px; /* scroll button position */
+}
+.scroll-right {
+    right: 50px; /* scroll button position */
+}
+.scroll-left:hover, .scroll-right:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------- Popup Window --------------------------------------------------*/
+.quick-add-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    max-width: 90%; 
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 11;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Close Button - Positioned Outside the Popup */
+.close-popup {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.close-popup:hover {
+    background: #ff4045;
+}
+
+/* Popup Content Styling */
+.popup-content {
+    text-align: center;
+}
+
+/* Product Info in Popup */
+.popup-product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.popup-product-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.popup-product-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.popup-product-price {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Separator */
+.popup-content hr {
+    border: 0.5px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Size Options Styling for Popup */
+.popup-size-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+/* Hide the radio input, display only the label as a button */
+.popup-size-options input[type="radio"] {
+    display: none;
+}
+
+/* Style the label as a rounded button */
+.popup-size-options label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    border: 2px solid #1511df;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #0400ff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Highlight selected size option */
+.popup-size-options input[type="radio"]:checked + label {
+    background-color: rgb(4, 0, 255);
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+/* Buttons in Popup */
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.add-to-cart-button, .buy-now-button {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+    background-color: #1511df;
+    color: white;
+}
+
+.add-to-cart-button:hover {
+    background-color: #3b3bff;
+}
+
+/* Buy Now Button */
+.buy-now-button {
+    background-color: #000000;
+    color: white;
+}
+
+.buy-now-button:hover {
+    background-color: #333333;
+}
+
+
+/* Responsive Product Card Section */
+@media (max-width: 768px) {
+    .box {
+        width: 190px; 
+        padding: 12px; 
+    }
+    .img-div {
+        height: 240px;
+    }
+    .product-name {
+        font-size: 1.5rem; 
+    }
+    .product-price {
+        font-size: 1.125rem; 
+    }
+    .quick-add-button {
+        font-size: 1rem; 
+        padding: 6px 10px; 
+    }
+}

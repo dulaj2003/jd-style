@@ -1,0 +1,389 @@
+/*------------------------------------------------- General styling ---------------------------------------*/
+* {font-family: Arial, sans-serif;}
+
+
+
+
+
+
+.aboutus-container {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    /* padding: 10px 180px; */
+    text-align: justify;
+}
+
+.aboutus-container h3{
+    font-size: 1.875rem;
+    padding: 25px 0 10px;
+    display: flex;
+}
+.aboutus-container ul {
+    padding-left: 50px;
+    padding-top: 5px;
+}
+
+
+
+
+
+
+/*----------------------------------------- Introduction -----------------------------------------*/
+.aboutus-intro {
+    height: auto;
+    width: 100%;
+    background-image: url('/assets/images/about-us/1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+
+}
+.aboutus-intro h2 {
+    text-align: center;
+    color: aliceblue;
+    padding: 60px 0 15px 10px;
+    font-size: 2.5rem;
+}
+.intro {
+    text-align: center;
+    color: aliceblue;
+    padding-top: 50PX;
+}
+.intro a {
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-decoration: none; /* remove underline from link */
+}
+.intro p {
+    padding: 0 10px 40px;
+}
+
+.intro a::after { 
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: -4px; /* adjust underline position */ 
+    width: 100%; 
+    height: 2px; /* adjust underline  thickness */ 
+    background: rgb(0, 238, 255); 
+    transform: scaleX(0); 
+    transform-origin: bottom right; 
+    transition: transform 0.3s ease; 
+}
+.intro a:hover::after { 
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+}
+
+@media (max-width: 1080px) {
+    .intro  {
+       padding-top: 20px;
+    }
+}
+@media (max-width: 680px) {
+    .aboutus-intro h2 {
+        font-size: 2.125rem;
+    }
+}
+
+
+
+
+
+/*----------------------------------------- Our Stores -----------------------------------------*/
+.aboutus-store {
+    margin: 0 120px ; 
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsive layouts */
+    gap: 20px; 
+
+}
+.store-description {
+    flex: 1;
+    /* padding: 0 30px 0 0 ;   */
+}
+.store-description h3{
+    padding: 0 0 10px;
+}
+
+.store-pic {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+}
+
+/* code for responsive image - before video
+.store-pic {
+    max-height: 500px;
+    min-width: 50%;
+    background-image: url('/assets/images/store.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+} */
+
+.store-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video fills the container */
+    border-radius: 10px; /* Match previous style for rounded corners */
+}
+
+
+@media (max-width: 1080px) {
+    .aboutus-store {
+        flex-direction: column; /* Change to column layout */
+       
+    }
+    .store-description {
+        padding: 0 ;  
+    }
+    /* .store-pic {
+        min-height: 500px; 
+        width: 100%; 
+    } */
+}
+
+/* @media (max-width: 844px) {
+    .store-pic {
+        min-height: 400px; 
+        width: 100%; 
+    }
+} */
+
+
+
+
+/*----------------------------------------- Mission & Values -----------------------------------------*/
+.mission {
+    margin: 60px 120px ;
+}
+.mission h4 {
+    margin-top: 15px;
+    font-size: 22px;
+
+}
+.mission ul {
+    font-size: 17.5px;
+}
+
+
+
+
+/*----------------------------------------- Our Team -----------------------------------------*/
+.team-content {
+    margin: 10px 120px;
+
+}
+
+.team-members {
+    display: flex;
+    margin: 15px 0 15px 20px;
+    gap: 20px; 
+
+}
+
+.founder {
+    height: 570px;
+    /* width: 650px; */
+    /* margin: 25px 0 0 60px; */
+    background-size: cover;
+    background-position: center;
+    letter-spacing: 3px;
+    background-image: url('/assets/images/founders.jpeg');
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    flex: 1;
+    /* display: block; */
+    
+}
+.f1 {
+    padding: 20px 0 0 30px;
+    font-size: 30px;    
+    font-weight: bolder;
+    line-height: 1.2;
+    height: 440px;
+}
+.f2 {
+    font-size: 30px;    
+    font-weight: bolder;
+    line-height: 1.2;
+    padding-left: 230px;
+}
+.founder a {
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-decoration: none; /* remove underline from link */
+}
+
+.founder a::after { 
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: -4px; /* Adjust underline vertical position */ 
+    width: 100%; 
+    height: 5px; /* Adjust underline thickness */ 
+    background: rgb(255, 255, 255); 
+    transform: scaleX(0); 
+    transform-origin: bottom right; 
+    transition: transform 0.3s ease; 
+}
+.founder a:hover::after { 
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+}
+
+.managers {
+    margin: 0 20px;
+   
+}
+
+.managers li {
+    font-size: 1.075rem;
+    margin-bottom: 10px;
+}
+@media (max-width: 1260px) {
+    .team-members {
+        flex-direction: column; /* Stack the .founder and .managers vertically */
+        margin: 25px 120px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .founder {
+        height: 80%; 
+        width:450px; 
+    }
+    .managers {
+        margin: 20px 0;
+        width: 100%; 
+    }
+    .managers ul {
+        padding: 0;
+    }
+    .f2 {
+        font-size: 30px;    
+        font-weight: bolder;
+        line-height: 1.2;
+        padding-left: 230px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 930px) {
+    .managers {
+        width: 450px;
+    }
+}
+@media (max-width: 693px){
+    .team-members {
+        margin: 25px 0 0;
+    }
+    .founder {
+        height: auto; 
+        width: 80%; 
+    }
+    .managers {
+        width: 100%;
+    }
+    .f1 {
+        height: 340px;
+    }
+}
+@media (max-width: 480px){
+    .f1 a {
+        display: none;
+    }
+    .f2 a {
+        display: none;
+    }
+    .founder {
+        height: auto; 
+        width: 80%; 
+    }
+}
+
+
+/*----------------------------------------- Our Work and Services -----------------------------------------*/
+.services {
+    margin: 60px 120px;
+}
+.services ul {
+    padding: 10px 0 10px 50px ;
+    font-size: 17.5px;
+}
+.services li {
+    margin-bottom: 5px;
+}
+
+
+
+
+
+/*----------------------------------------- Join Us -----------------------------------------*/
+.l-content {
+    margin: 0 120px;
+}
+/* 
+@media (max-width:600px){ 
+    main{
+         width: 100%;
+         position: fixed;
+         flex-wrap: wrap;
+    }    
+  */
+    /* .hr-category-content{
+     font-size: ;
+    } */
+/*  
+    .container{
+     display: block;
+    }
+ } */
+
+
+/* ------------------smaller screen------------------------- */
+ @media (max-width: 675px){
+    .aboutus-store, 
+    .mission, 
+    .team-content, 
+    .services, 
+    .l-content {
+        margin: 50px ;
+        
+    }
+}
+
+@media (max-width: 430px) {
+    .aboutus-store h3, 
+    .mission h3, 
+    .team-content h3, 
+    .services h3, 
+    .l-content h3 {
+        font-size: 1.5rem;
+    }
+    .aboutus-store p, 
+    .mission p, 
+    .team-content p, 
+    .managers li,
+    .services p,
+    .services li,
+    .l-content p {
+        font-size: 1.025rem;
+    }
+    /* .store-pic {
+        min-height: 300px;
+        width: 100%;
+    } */
+    .f1{
+        height: 300px; 
+        width: 80%; 
+    }
+}
+
+
+/* mission h4 */

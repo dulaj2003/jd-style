@@ -1,0 +1,266 @@
+//-------------------------------------------------- product items with popup msg & scroll bar --------------------------------------------------
+const products = [
+    {
+        id: "product1",
+        image: "\asseets\images\x02.png",
+        hovrimage: "\asseets\images\x04.png",
+        name: "Product 1",
+        cost: 1000,         // Base cost for product 1
+    },
+    {
+        id: "product2",
+        image: "1.png",
+        hovrimage: "3.png",
+        name: "Product 2",
+        cost: 1200,         // Base cost for product 2
+    },
+    {
+        id: "product3",
+        image: "14.png",
+        hovrimage: "18.png",
+        name: "Product 3",
+        cost: 800,         // Base cost for product 3
+    },
+        {
+        id: "product4",
+        image: "17.png",
+        hovrimage: "15.png",
+        name: "Product 4",
+        cost: 1250,         // Base cost for product 4
+    },
+    {
+        id: "product5",
+        image: "19.png",
+        hovrimage: "16.png",
+        name: "Product 5",
+        cost: 900,         // Base cost for product 5
+    },
+    {
+        id: "product6",
+        image: "21.png",
+        hovrimage: "20.png",
+        name: "Product 6",
+        cost: 1200,         // Base cost for product 6
+    },
+    {
+        id: "product7",
+        image: "8.png",
+        hovrimage: "7.png",
+        name: "Product 7",
+        cost: 750,         // Base cost for product 7
+    },
+    {
+        id: "product8",
+        image: "25.jpg",
+        hovrimage: "13.png",
+        name: "Product 8",
+        cost: 1000,         // Base cost for product 8
+    },
+    {
+        id: "product9",
+        image: "26.png",
+        hovrimage: "27.png",
+        name: "Product 9",
+        cost: 850,         // Base cost for product 9
+    },
+    {
+        id: "product10",
+        image: "10.png",
+        hovrimage: "12.png",
+        name: "Product 10",
+        cost: 600,         // Base cost for product 10
+    },
+    {
+        id: "product11",
+        image: "2.png",
+        hovrimage: "4.png",
+        name: "Product 11",
+        cost: 1000,         // Base cost for product 1
+    },
+    {
+        id: "product12",
+        image: "1.png",
+        hovrimage: "3.png",
+        name: "Product 12",
+        cost: 1200,         // Base cost for product 2
+    },
+    {
+        id: "product13",
+        image: "14.png",
+        hovrimage: "18.png",
+        name: "Product 13",
+        cost: 800,         // Base cost for product 3
+    },
+        {
+        id: "product14",
+        image: "17.png",
+        hovrimage: "15.png",
+        name: "Product 14",
+        cost: 1250,         // Base cost for product 4
+    },
+    {
+        id: "product15",
+        image: "19.png",
+        hovrimage: "16.png",
+        name: "Product 15",
+        cost: 900,         // Base cost for product 5
+    },
+    {
+        id: "product16",
+        image: "21.png",
+        hovrimage: "20.png",
+        name: "Product 16",
+        cost: 1200,         // Base cost for product 6
+    },
+    {
+        id: "product17",
+        image: "8.png",
+        hovrimage: "7.png",
+        name: "Product 17",
+        cost: 750,         // Base cost for product 7
+    },
+    {
+        id: "product18",
+        image: "25.jpg",
+        hovrimage: "13.png",
+        name: "Product 18",
+        cost: 1000,         // Base cost for product 8
+    },
+    {
+        id: "product19",
+        image: "26.png",
+        hovrimage: "27.png",
+        name: "Product 19",
+        cost: 850,         // Base cost for product 9
+    },
+    {
+        id: "product20",
+        image: "10.png",
+        hovrimage: "12.png",
+        name: "Product 20",
+        cost: 600,         // Base cost for product 10
+    }
+]
+
+
+const sizePriceAdjustments = {
+    "XS" : 200,
+    "S"  : 300,
+    "M"  : 400,
+    "L"  : 500,
+    "XL" : 600,
+    "XXL": 700,
+    "3XL": 800
+};
+
+// Load products into horizontal scroll
+// function loadProducts() {
+//     const container = document.getElementById('home-products-container');
+//     container.innerHTML = products.map(product => `
+//         <div class="box" onclick="navigateToProductDetails('${product.id}')" onmouseover="changeImage(this)" onmouseout="resetImage(this)">
+//             <div style="background-image: url('${product.image}')" class="img-div" data-original-src="${product.image}" data-hover-src="${product.hovrimage}"></div>
+//             <p class="product-name">${product.name}</p>
+//             <div class="product-details">
+//                 <span class="product-price">Rs.${product.cost + sizePriceAdjustments.L}</span>
+//                 <button class="quick-add-button" 
+//                     onclick="event.stopPropagation(); openQuickAddPopup('${product.image}', '${product.name}', 'Rs.${product.cost + sizePriceAdjustments.L}')">Quick Add</button>
+//             </div>
+//         </div>
+//     `).join('');
+
+function loadProducts() {
+    const container = document.getElementById('home-products-container');
+    container.innerHTML = products.map(product => `
+        <div class="box">
+            <div class="img-div" style="background-image: url('/asseets/images/${product.image}')"></div>
+            <p class="product-name">${product.name}</p>
+            <p class="product-price">Rs. ${product.cost}</p>
+        </div>
+    `).join('');
+}
+
+
+function changeImage(element) {
+    const image = element.querySelector('.img-div');
+    const hoverSrc = image.getAttribute('data-hover-src');
+    if (hoverSrc) {
+        image.style.backgroundImage = `url(${hoverSrc})`;
+    }
+}
+
+function resetImage(element) {
+    const image = element.querySelector('.img-div');
+    const originalSrc = image.getAttribute('data-original-src');
+    if (originalSrc) {
+        image.style.backgroundImage = `url(/asseets/images/${originalSrc})`;
+    }
+}
+
+function openQuickAddPopup(imageSrc, productName, productPrice) {
+    document.getElementById('popupProductImage').src = imageSrc;
+    document.getElementById('popupProductName').textContent = productName;
+    document.getElementById('popupProductPrice').textContent = productPrice;
+    document.getElementById('quickAddOverlay').style.display = 'block';
+    document.getElementById('quickAddPopup').style.display = 'block';
+}
+
+function closeQuickAddPopup() {
+    document.getElementById('quickAddOverlay').style.display = 'none';
+    document.getElementById('quickAddPopup').style.display = 'none';
+}
+
+window.onclick = function(event) {
+    const overlay = document.getElementById('quickAddOverlay');
+    if (event.target === overlay) {
+        closeQuickAddPopup();
+    }
+}
+
+function navigateToProductDetails(productId) {
+    window.location.href = `product-details.html?id=${productId}`;
+}
+
+// Horizontal scroll buttons
+function scrollLeft() {
+    const container = document.getElementById('home-products-container');
+    container.scrollBy({ left: -300, behavior: 'smooth' });
+}
+
+function scrollRight() {
+    const container = document.getElementById('home-products-container');
+    container.scrollBy({ left: 300, behavior: 'smooth' });
+}
+
+// Load products initially
+loadProducts();
+
+
+
+
+
+//-------------------------------------------------- slideshow banner --------------------------------------------------
+var TrandingSlider = new Swiper('.tranding-slider', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2.5,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+
+
+
+

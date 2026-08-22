@@ -1,0 +1,251 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 150px;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Main container for horizontal blocks */
+.main-container {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contact Info Section */
+.contact {
+    margin-bottom: 20px;
+    padding: 20px 50px ;
+    background-image: url('/assets/images/contactusbanner2.jpg');
+    min-height: 400px;
+    background-size: cover;
+    background-position: top;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    justify-items: center;
+    color: #ffffff;
+}
+
+.contact-heading {
+    font-size: 5rem;
+    margin-bottom: 1.5em;
+    color: #ffffff;
+}
+
+.contact-section {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ffffff;
+    justify-items: center;	
+    text-shadow: 2px 1px 3px rgb(0, 0, 0);
+}
+
+.contact-p {
+    justify-items: center;
+}
+
+.contact h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+/* Form Section */
+.form-container {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 48%;
+    min-width: 300px;
+}
+
+.form-container p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.form-container input[type="text"], .form-container input[type="email"], .form-container textarea, .form-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+
+.form-container label {
+    font-size: 18px;
+    margin-top: 25px;
+    display: flex;
+    color: #444;
+}
+
+/* Buttons */
+.buttons-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttons-div button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.buttons-div .clear {
+    background-color: #f44336;
+    color: white;
+}
+
+.buttons-div .clear:hover {
+    background-color: #d32f2f;
+}
+
+.buttons-div .send {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.buttons-div .send:hover {
+    background-color: #388e3c;
+}
+
+/* Store Info Section */
+.store-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-radius: 10px;
+}
+.store-content {
+    height: 150px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #000000,  #00028d); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.store-content section {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px 0 10px;
+}
+.store-content p {
+    font-size: 20px;
+    padding: 0 10px;
+}
+.branches {
+    flex: 1;
+    display: grid;
+    gap: 5px;
+    font-size: 16.5px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 30px ;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: rgb(216, 236, 253);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.branches div {
+    padding: 15px;
+    border-bottom: 1px solid #000000;
+}
+
+.branches div:last-child {
+    border-bottom: none;
+}
+
+.branches span {
+    color: #e63946; 
+}
+.locations {
+    align-content: center;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1290px) {
+    .main-container {
+        gap: 60px;
+        /* max-width: 1100px; */
+    }
+}
+
+@media (max-width: 1160px) {
+    .main-container {
+        gap: 50px;
+        max-width: 1000px;
+    }
+}
+@media (max-width: 976px) {
+    .main-container {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        margin: 0 75px;
+
+    }
+
+    .form-container, .store-container {
+        
+        max-width: 100%;
+    }
+
+    .store-container .branches {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-container {
+        margin: 0 50px;
+
+    }
+}
+
+@media (max-width: 520px) {
+    .main-container {
+        margin: 0 30px;
+
+    }
+}
+@media (max-width: 460px) {
+    .main-container {
+        margin: 0 20px;
+
+    }
+}
+
+@media (max-width: 440px) {
+    .main-container {
+        margin: 0 5px;
+
+    }
+}
